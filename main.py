@@ -10,8 +10,8 @@ cap = cv2.VideoCapture(0)
 cap.set(3, wCam)
 cap.set(4, hCam)
 
-folderPath = "fingers" # name of the folder, where there are images of fingers
-fingerList = os.listdir(folderPath) # list of image titles in 'fingers' folder
+folderPath = "fingers"
+fingerList = os.listdir(folderPath)
 overlayList = []
 for imgPath in fingerList:
     image = cv2.imread(f'{folderPath}/{imgPath}')
